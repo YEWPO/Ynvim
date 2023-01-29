@@ -228,6 +228,12 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+end
  
 -- NvimTreeConfig
 require('nvim-tree').setup({
@@ -265,11 +271,12 @@ require('lualine').setup {
   options = {
     theme = 'auto',
     disabled_filetypes = {
-      statusline = {'NvimTree'},
+      statusline = {'NvimTree', 'toggleterm'},
       winbar = {},
     },
     ignore_focus = {
       'NvimTree',
+      'toggleterm',
     },
   }
 }
