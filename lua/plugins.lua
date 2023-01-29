@@ -311,5 +311,6 @@ wk.register ({
     name = "File Explorer",
     o = {"<cmd>NvimTreeOpen<cr>", "NvimTreeOpen"},
     c = {"<cmd>NvimTreeClose<cr>", "NvimTreeClose"}
-  }
+  },
+  t = {"<cmd>ToggleTerm<cr>", "Create a new Terminal"},
 }, {prefix = "<leader>"})

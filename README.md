@@ -2,7 +2,7 @@
 
 yewpo's nvim configures
 
-**UBUNTU ONLY**
+**DEBIAN LIKE ONLY**
 
 ## 效果预览
 
@@ -96,3 +96,13 @@ mv Ynvim ./nvim
 ### 通知工具
 
 - nvim-notify
+
+### 快捷键
+
+- which-key.nvim
+
+## 自定义快捷键
+
+- `<bs>eo`：打开文件浏览器
+- `<bs>ec`：关闭文件浏览器
+- `<bs>t`：新建一个终端
