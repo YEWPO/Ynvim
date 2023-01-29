@@ -1,10 +1,9 @@
 vim.g.loaded_newtrw = 1
 vim.g.loaded_newtrPlugin = 1
 vim.opt.termguicolors = true
-vim.g.mapleader = "<Space>"
 vim.notify = require("notify")
  
-vim.cmd[[colorscheme tokyonight-moon]]
+vim.cmd[[colorscheme catppuccin]]
  
 local ensure_packer = function()
   local fn = vim.fn
@@ -95,6 +94,7 @@ require('packer').startup({function(use)
  
   -- Theme and StatusLine
   use 'folke/tokyonight.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
   use 'nvim-lualine/lualine.nvim'
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
@@ -104,7 +104,6 @@ require('packer').startup({function(use)
     event = 'VimEnter',
     config = function()
       require('dashboard').setup {
-        -- config
       }
     end
   }
@@ -114,11 +113,8 @@ require('packer').startup({function(use)
     "folke/which-key.nvim",
     config = function()
       vim.o.timeout = true
-      vim.o.timeoutlen = 500
+      vim.o.timeoutlen = 300
       require("which-key").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
       }
     end
   }
@@ -306,3 +302,14 @@ null_ls.setup({
     null_ls.builtins.completion.luasnip,
   },
 })
+
+-- Which key mappings
+local wk = require("which-key")
+
+wk.register ({
+  e = {
+    name = "File Explorer",
+    o = {"<cmd>NvimTreeOpen<cr>", "NvimTreeOpen"},
+    c = {"<cmd>NvimTreeClose<cr>", "NvimTreeClose"}
+  }
+}, {prefix = "<leader>"})
