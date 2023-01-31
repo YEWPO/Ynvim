@@ -48,7 +48,7 @@ require('packer').startup({function(use)
   use {
     'lewis6991/gitsigns.nvim',
     config = function()
-    require('gitsigns').setup()
+      require('gitsigns').setup()
     end
   }
  
@@ -95,15 +95,87 @@ require('packer').startup({function(use)
   use 'nvim-lualine/lualine.nvim'
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
-  -- Startup
+  -- Dashboard
   use {
     'glepnir/dashboard-nvim',
     event = 'VimEnter',
     config = function()
       require('dashboard').setup {
+        theme = 'doom',
+        config = {
+          header = {
+            '',
+            '⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣴⣦⣤⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ',
+            '⠀⠀⠀⠀⠀⠀⢀⣤⣾⣿⣿⣿⣿⠿⠿⠿⠿⣿⣿⣿⣿⣶⣤⡀⠀⠀⠀⠀⠀⠀ ',
+            '⠀⠀⠀⠀⣠⣾⣿⣿⡿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⢿⣿⣿⣶⡀⠀⠀⠀⠀ ',
+            '⠀⠀⠀⣴⣿⣿⠟⠁⠀⠀⠀⣶⣶⣶⣶⡆⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣦⠀⠀⠀ ',
+            '⠀⠀⣼⣿⣿⠋⠀⠀⠀⠀⠀⠛⠛⢻⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣧⠀⠀ ',
+            '⠀⢸⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡇⠀ ',
+            '⠀⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⠀ ',
+            '⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⡟⢹⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⣹⣿⣿⠀ ',
+            '⠀⣿⣿⣷⠀⠀⠀⠀⠀⠀⣰⣿⣿⠏⠀⠀⢻⣿⣿⡄⠀⠀⠀⠀⠀⠀⣿⣿⡿⠀ ',
+            '⠀⢸⣿⣿⡆⠀⠀⠀⠀⣴⣿⡿⠃⠀⠀⠀⠈⢿⣿⣷⣤⣤⡆⠀⠀⣰⣿⣿⠇⠀ ',
+            '⠀⠀⢻⣿⣿⣄⠀⠀⠾⠿⠿⠁⠀⠀⠀⠀⠀⠘⣿⣿⡿⠿⠛⠀⣰⣿⣿⡟⠀⠀ ',
+            '⠀⠀⠀⠻⣿⣿⣧⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⠏⠀⠀⠀ ',
+            '⠀⠀⠀⠀⠈⠻⣿⣿⣷⣤⣄⡀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⠟⠁⠀⠀⠀⠀ ',
+            '⠀⠀⠀⠀⠀⠀⠈⠛⠿⣿⣿⣿⣿⣿⣶⣶⣿⣿⣿⣿⣿⠿⠋⠁⠀⠀⠀⠀⠀⠀ ',
+            '⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠛⠛⠛⠛⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ',
+            '',
+          },
+          center = {
+            {
+              icon = '',
+              icon_hl = 'Title',
+              desc = 'New File',
+              desc_hl = 'String',
+              key = 'n',
+              key_hl = 'Number',
+              action = 'enew'
+            },
+            {
+              icon = '',
+              icon_hl = 'Title',
+              desc = 'Find File',
+              desc_hl = 'String',
+              key = 'f',
+              key_hl = 'Number',
+              action = 'Telescope find_files'
+            },
+            {
+              icon = '',
+              icon_hl = 'Title',
+              desc = 'File Explorer',
+              desc_hl = 'String',
+              key = 'e',
+              key_hl = 'Number',
+              action = 'NvimTreeOpen'
+            },
+            {
+              icon = '',
+              icon_hl = 'Title',
+              desc = 'Update Plugins',
+              desc_hl = 'String',
+              key = 'u',
+              key_hl = 'Number',
+              action = 'PackerSync'
+            },
+            {
+              icon = '',
+              icon_hl = 'Title',
+              desc = 'Exit',
+              desc_hl = 'String',
+              key = 'q',
+              key_hl = 'Number',
+              action = 'q'
+            }
+          }
+        },
       }
-    end
+    end,
+    requires = {'nvim-tree/nvim-web-devicons'}
   }
+
+  use 'lewis6991/impatient.nvim'
 
   -- Which Key
   use {

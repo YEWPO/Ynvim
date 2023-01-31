@@ -10,7 +10,7 @@ yewpo's nvim configures
 
 启动界面：
 
-<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129124212447.png" alt="image-20230129124212447" style="zoom: 25%;" />
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230131174705253.png" alt="image-20230131174705253" style="zoom:25%;" />
 
 文件管理，终端，代码检查：
 
@@ -64,6 +64,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
 | which-key            | https://github.com/folke/which-key.nvim              | 快捷键           |
 | comment              | https://github.com/numToStr/Comment.nvim             | 代码注释         |
 | nvim-notify          | https://github.com/rcarriga/nvim-notify              | 通知             |
+| impatient.nvim       | https://github.com/lewis6991/impatient.nvim          | 性能优化         |
 
 ### 未配置
 
