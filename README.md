@@ -28,6 +28,14 @@ yewpo's nvim configures
 
 <img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123957283.png" alt="image-20230129123957283" style="zoom:25%;" />
 
+## 配置要求
+
+- Neovim >= 0.8.0 
+- [nvm](https://github.com/nvm-sh/nvm)
+- pip
+- a [Nerd Font](https://www.nerdfonts.com/)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/) 
+
 ## 使用方法
 
 ### Debian Like
@@ -65,15 +73,18 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
 | comment              | https://github.com/numToStr/Comment.nvim             | 代码注释         |
 | nvim-notify          | https://github.com/rcarriga/nvim-notify              | 通知             |
 | impatient.nvim       | https://github.com/lewis6991/impatient.nvim          | 性能优化         |
+| noice                | https://github.com/folke/noice.nvim                  | 组件             |
 
 ### 未配置
 
-| 插件名         | 仓库地址                                 | 类别     |
-| -------------- | ---------------------------------------- | -------- |
-| nvim-autopairs | https://github.com/windwp/nvim-autopairs | 括号补全 |
-| hop.nvim       | https://github.com/phaazon/hop.nvim      | 代码跳跃 |
-| nvim-dap       | https://github.com/mfussenegger/nvim-dap | 调试     |
-| nvim-dap-ui    | https://github.com/rcarriga/nvim-dap-ui  | 调试界面 |
+| 插件名          | 仓库地址                                   | 类别     |
+| --------------- | ------------------------------------------ | -------- |
+| nvim-autopairs  | https://github.com/windwp/nvim-autopairs   | 括号补全 |
+| hop.nvim        | https://github.com/phaazon/hop.nvim        | 代码跳跃 |
+| nvim-dap        | https://github.com/mfussenegger/nvim-dap   | 调试     |
+| nvim-dap-ui     | https://github.com/rcarriga/nvim-dap-ui    | 调试界面 |
+| project.nvim    | https://github.com/ahmedkhalf/project.nvim | 项目管理 |
+| nvim-ts-rainbow | https://github.com/p00f/nvim-ts-rainbow    | 彩虹括号 |
 
 ## 快捷键
 
