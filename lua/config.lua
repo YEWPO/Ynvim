@@ -227,4 +227,5 @@ wk.register ({
     q = {"<cmd>wq<cr>", "Save and Quit"},
   },
   q = {"<cmd>q<cr>", "Quit"},
+  p = {"<cmd>Trouble<cr>", "Problem Line"},
 }, {prefix = "<leader>"})
