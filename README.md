@@ -10,99 +10,99 @@ yewpo's nvim configures
 
 启动界面：
 
-![image-20230129124212447](https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129124212447.png)
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129124212447.png" alt="image-20230129124212447" style="zoom: 25%;" />
 
 文件管理，终端，代码检查：
 
-![image-20230129123519451](https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123519451.png)
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123519451.png" alt="image-20230129123519451" style="zoom: 25%;" />
 
 插件管理：
 
-![image-20230129123740162](https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123740162.png)
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123740162.png" alt="image-20230129123740162" style="zoom: 25%;" />
 
 补全及预览：
 
-![image-20230129123917980](https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123917980.png)
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123917980.png" alt="image-20230129123917980" style="zoom: 25%;" />
 
 按键提示：
 
-![image-20230129123957283](https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123957283.png)
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123957283.png" alt="image-20230129123957283" style="zoom:25%;" />
 
 ## 使用方法
 
-进入`~/.config`目录，然后下载源码
+### Debian Like
 
 ```shell
-git clone https://github.com/YEWPO/Ynvim.git
+git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
 ```
 
-将下载的文件夹名更换为`nvim`
+## 插件
 
-```shell
-mv Ynvim ./nvim
-```
+### 已配置
 
-**编辑`~/.config/nvim/lua/plugins.lua`，找到并注释掉`vim.cmd[[colorscheme tokyonight-night]]`这一行。**
+| 插件名               | 仓库地址                                             | 类别             |
+| -------------------- | ---------------------------------------------------- | ---------------- |
+| packer.nvim          | https://github.com/wbthomason/packer.nvim            | 插件管理         |
+| dashboard.nvim       | https://github.com/glepnir/dashboard-nvim            | 启动界面         |
+| nvim-lspconfig       | https://github.com/neovim/nvim-lspconfig             | 语言服务         |
+| null-ls              | https://github.com/jose-elias-alvarez/null-ls.nvim   | 语言服务         |
+| mason                | https://github.com/williamboman/mason.nvim           | 语言服务管理     |
+| mason-lspconfig.nvim | https://github.com/williamboman/mason-lspconfig.nvim | 语言服务衔接工具 |
+| trouble.nvim         | https://github.com/folke/trouble.nvim                | 代码诊断         |
+| nvim-cmp             | https://github.com/hrsh7th/nvim-cmp                  | 提示补全         |
+| nvim-treesitter      | https://github.com/nvim-treesitter/nvim-treesitter   | 语法高亮         |
+| Luasnip              | https://github.com/L3MON4D3/LuaSnip                  | 片段引擎         |
+| telescope.nvim       | https://github.com/nvim-telescope/telescope.nvim     | 模糊查找         |
+| nvim-tree.lua        | https://github.com/kyazdani42/nvim-tree.lua          | 文件浏览器       |
+| tokoynight.nvim      | https://github.com/folke/tokyonight.nvim             | 主题             |
+| nvim                 | https://github.com/catppuccin/nvim                   | 主题             |
+| lualine.nvim         | https://github.com/nvim-lualine/lualine.nvim         | 状态栏           |
+| bufferline.nvim      | https://github.com/akinsho/bufferline.nvim           | 文件栏           |
+| nvim-web-devicons    | https://github.com/kyazdani42/nvim-web-devicons      | 图标             |
+| toggleterm.nvim      | https://github.com/akinsho/toggleterm.nvim           | 终端             |
+| gitsigns.nvim        | https://github.com/lewis6991/gitsigns.nvim           | git栏            |
+| which-key            | https://github.com/folke/which-key.nvim              | 快捷键           |
+| comment              | https://github.com/numToStr/Comment.nvim             | 代码注释         |
+| nvim-notify          | https://github.com/rcarriga/nvim-notify              | 通知             |
 
-运行`nvim`，在内部命令行输入`PackerSync<CR>`。（`<CR>`表示回车）；或者，终端运行`nvim +PackerSync`，**运行后中途报错忽略**。完成后，退出`nvim`，解除上文中注释的内容，再次运行`nvim`，即可完成配置。
+### 未配置
 
-## 已有插件
+| 插件名         | 仓库地址                                 | 类别     |
+| -------------- | ---------------------------------------- | -------- |
+| nvim-autopairs | https://github.com/windwp/nvim-autopairs | 括号补全 |
+| hop.nvim       | https://github.com/phaazon/hop.nvim      | 代码跳跃 |
+| nvim-dap       | https://github.com/mfussenegger/nvim-dap | 调试     |
+| nvim-dap-ui    | https://github.com/rcarriga/nvim-dap-ui  | 调试界面 |
 
-### 插件管理
+## 快捷键
 
-- packer.nvim
+> <leader>为`\`。
 
-### 启动界面
+### Normal Mode
 
-- dashboard.nvim
+#### 文件
 
-### 语言服务
+| 操作         | 效果       |
+| ------------ | ---------- |
+| `<leader>ss` | 保存文件   |
+| `<leader>sq` | 保存并退出 |
+| `<leader>q`  | 普通退出   |
 
-- lspconfig
-- null-ls
-- mason
-- mason-lspconfig
+#### 文件浏览器
 
-### 补全工具
+| 操作         | 效果           |
+| ------------ | -------------- |
+| `<leader>eo` | 打开文件浏览器 |
+| `<leader>ec` | 关闭文件浏览器 |
 
-- nvim-cmp
-- luasnip
-- cmp-buffer
-- cmp-path
-- cmp-cmdline
-- cmp-luasnip
+#### 终端
 
-### 查找工具
+| 操作        | 效果     |
+| ----------- | -------- |
+| `<leader>t` | 创建终端 |
 
-- telescope.nvim
+### File Explorer
 
-### 终端工具
-
-- toggleterm.nvim
-
-### 文件管理
-
-- nvimtree
-
-### 状态烂
-
-- lualine
-- bufferline
-
-### 注释工具
-
-- comment.nvim
-
-### 通知工具
-
-- nvim-notify
-
-### 快捷键
-
-- which-key.nvim
-
-## 自定义快捷键
-
-- `<bs>eo`：打开文件浏览器
-- `<bs>ec`：关闭文件浏览器
-- `<bs>t`：新建一个终端
+| 操作 | 效果     |
+| ---- | -------- |
+| `u`  | 上级目录 |
