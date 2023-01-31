@@ -162,6 +162,16 @@ vim.api.nvim_create_autocmd({'BufEnter','BufAdd','BufNew','BufNewFile','BufWinEn
  
 -- Status Line Setting
 require('lualine').setup {
+  sections = {
+    lualine_x = {
+      {
+        require("noice").api.statusline.mode.get,
+        cond = require("noice").api.statusline.mode.has,
+        color = { fg = "#ff9e64" },
+      },
+      'encoding', 'fileformat', 'filetype'
+    },
+  },
   options = {
     theme = 'auto',
     disabled_filetypes = {
