@@ -76,7 +76,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
 
 ## 快捷键
 
-> <leader>为`\`。
+> `<leader>`为`\`。
 
 ### Normal Mode
 
