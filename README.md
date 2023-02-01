@@ -4,8 +4,6 @@
 
 ## 效果预览
 
-主题：`tokoynight`
-
 启动界面：
 
 <img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230131174705253.png" alt="image-20230131174705253" style="zoom:25%;" />
@@ -42,7 +40,7 @@
 git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
 ```
 
-如果安装有询问，请输入Y后回车。**报错请忽略。**安装完成后，退出重新运行`nvim`，等待剩余项目安装完成。之后就可以正常使用了。
+如果安装有询问，请输入`Y`后回车。**报错请忽略**。安装完成后，退出重新运行`nvim`，等待剩余项目安装完成。之后就可以正常使用了。
 
 ### Windows
 
