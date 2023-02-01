@@ -159,7 +159,7 @@ require('lualine').setup {
     },
   },
   options = {
-    theme = 'auto',
+    theme = "catppuccin",
     disabled_filetypes = {
       statusline = {'NvimTree', 'toggleterm'},
       winbar = {},
@@ -171,6 +171,7 @@ require('lualine').setup {
   }
 }
 require('bufferline').setup {
+  highlights = require("catppuccin.groups.integrations.bufferline").get(),
   options = {
     offsets = {
       {

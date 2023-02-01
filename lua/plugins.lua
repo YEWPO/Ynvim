@@ -90,7 +90,6 @@ require('packer').startup({function(use)
   }
  
   -- Theme and StatusLine
-  use 'folke/tokyonight.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
   use 'nvim-lualine/lualine.nvim'
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
@@ -232,5 +231,5 @@ config = {
 }
 })
 
-vim.cmd[[colorscheme catppuccin]]
+vim.cmd.colorscheme "catppuccin"
 vim.notify = require("notify")
