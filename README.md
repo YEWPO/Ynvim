@@ -1,12 +1,10 @@
 # Ynvim
 
-yewpo's nvim configures
-
-**DEBIAN LIKE ONLY**
+`YEWPO`的`nvim`配置文件
 
 ## 效果预览
 
-主题：`tokoynight`。
+主题：`tokoynight`
 
 启动界面：
 
@@ -31,18 +29,22 @@ yewpo's nvim configures
 ## 配置要求
 
 - Neovim >= 0.8.0 
-- [nvm](https://github.com/nvm-sh/nvm)
-- pip
-- a [Nerd Font](https://www.nerdfonts.com/)
+- [nvm](https://github.com/nvm-sh/nvm)(用于管理`nodejs`版本)
+- python3
+- a [Nerd Font](https://www.nerdfonts.com/)（一些特殊符号的显示）
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/) 
 
 ## 使用方法
 
-### Debian Like
+### Linux
 
 ```shell
 git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
 ```
+
+### Windows
+
+未测试
 
 ## 插件
 
