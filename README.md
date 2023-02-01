@@ -116,7 +116,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
 
 #### 问题
 
-| 操作        | 效果             |      |
-| ----------- | ---------------- | ---- |
-| `<leader>p` | 打开代码错误窗口 |      |
+| 操作        | 效果             |
+| ----------- | ---------------- |
+| `<leader>p` | 打开代码错误窗口 |
 
