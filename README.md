@@ -112,9 +112,3 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
 | 操作        | 效果     |
 | ----------- | -------- |
 | `<leader>t` | 创建终端 |
-
-### File Explorer
-
-| 操作 | 效果     |
-| ---- | -------- |
-| `u`  | 上级目录 |

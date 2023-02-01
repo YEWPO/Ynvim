@@ -129,16 +129,11 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
  
--- NvimTreeConfig
+-- NvimTree Setting
 require('nvim-tree').setup({
   sort_by = "case_sensitive",
   view = {
     adaptive_size = true,
-    mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
-      },
-    },
   },
   renderer = {
     group_empty = true,
@@ -200,7 +195,7 @@ require('bufferline').setup {
   }
 }
  
--- null-ls Setting
+-- Null-ls Setting
 local null_ls = require("null-ls")
  
 null_ls.setup({
@@ -210,6 +205,21 @@ null_ls.setup({
     null_ls.builtins.completion.luasnip,
   },
 })
+
+-- Terminal Setting
+local Terminal  = require('toggleterm.terminal').Terminal
+local lazygit = Terminal:new({
+  cmd = "lazygit",
+  hidden = true,
+  direction = "float",
+  float_opts = {
+    border = "double",
+  },
+})
+
+function _lazygit_toggle()
+  lazygit:toggle()
+end
 
 -- Which key mappings
 local wk = require("which-key")
@@ -228,4 +238,5 @@ wk.register ({
   },
   q = {"<cmd>q<cr>", "Quit"},
   p = {"<cmd>Trouble<cr>", "Problem Line"},
+  g = {"<cmd>lua _lazygit_toggle()<CR>", "Lazygit"},
 }, {prefix = "<leader>"})
