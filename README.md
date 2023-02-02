@@ -6,19 +6,15 @@
 
 启动界面：
 
-<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230131174705253.png" alt="image-20230131174705253" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230202181850056.png" alt="image-20230202181850056" style="zoom:25%;" />
 
-文件管理，终端，代码检查：
+文件管理，终端，代码检查，`gitsigns`：
 
-<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123519451.png" alt="image-20230129123519451" style="zoom: 25%;" />
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230202182126605.png" alt="image-20230202182126605" style="zoom:25%;" />
 
-补全及预览：
+查找及预览：
 
-<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123917980.png" alt="image-20230129123917980" style="zoom: 25%;" />
-
-按键提示：
-
-<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123957283.png" alt="image-20230129123957283" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230202181943968.png" alt="image-20230202181943968" style="zoom:25%;" />
 
 ## 配置要求
 
@@ -33,14 +29,21 @@
 
 ### Linux
 
+如果之前安装过`neovim`，请先保证彻底删除配置文件，
+
 ```shell
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 rm -rf ~/.cache/nvim
+```
+
+获取和安装插件：
+
+```shell
 git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 ```
 
-**报错请忽略**。安装完成后，输入`:q<CR>`退出后将**自动**重新运行`nvim`，等待剩余项目安装完成。之后就可以正常使用了。
+**报错请忽略**。安装完成后，先退出`Packer`，再输入`:q<CR>`退出后将**自动**重新运行`nvim`，等待剩余项目安装完成。之后就可以正常使用了。
 
 一些语言服务需要自己在`Mason`中安装。
 
