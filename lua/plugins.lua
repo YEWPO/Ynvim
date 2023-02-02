@@ -134,11 +134,11 @@ require('packer').startup({function(use)
             {
               icon = '',
               icon_hl = 'Title',
-              desc = 'Find File',
+              desc = 'Find Recent File',
               desc_hl = 'String',
               key = 'f',
               key_hl = 'Number',
-              action = 'Telescope find_files'
+              action = 'Telescope oldfiles'
             },
             {
               icon = '',

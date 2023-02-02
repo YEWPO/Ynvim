@@ -12,10 +12,6 @@
 
 <img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123519451.png" alt="image-20230129123519451" style="zoom: 25%;" />
 
-插件管理：
-
-<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123740162.png" alt="image-20230129123740162" style="zoom: 25%;" />
-
 补全及预览：
 
 <img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230129123917980.png" alt="image-20230129123917980" style="zoom: 25%;" />
@@ -26,29 +22,33 @@
 
 ## 配置要求
 
-- Neovim >= 0.8.0 
-- [nvm](https://github.com/nvm-sh/nvm)(用于管理`nodejs`版本)
+- Neovim >= 0.8.0 （不建议低版本）
+- [nvm](https://github.com/nvm-sh/nvm)（用于管理`nodejs`版本）
 - python3
-- a [Nerd Font](https://www.nerdfonts.com/)（一些特殊符号的显示）
+- a [Nerd Font](https://www.nerdfonts.com/)（一些特殊符号LOGO的显示）
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/) 
+- [lazygit](https://github.com/jesseduffield/lazygit)（该配置中提供了对lazygit的支持）
 
 ## 使用方法
 
 ### Linux
 
 ```shell
-git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.cache/nvim
+git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 ```
 
-如果安装有询问，请输入`Y`后回车。**报错请忽略**。安装完成后，退出重新运行`nvim`，等待剩余项目安装完成。之后就可以正常使用了。
+**报错请忽略**。安装完成后，输入`:q<CR>`退出后将**自动**重新运行`nvim`，等待剩余项目安装完成。之后就可以正常使用了。
+
+一些语言服务需要自己在`Mason`中安装。
 
 ### Windows
 
 未测试
 
 ## 插件
-
-一些语言服务需要自己在`Mason`中安装。`Mason`打开方式：`:Mason<Enter>`。
 
 ### 已配置
 
@@ -66,7 +66,6 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
 | Luasnip              | https://github.com/L3MON4D3/LuaSnip                  | 片段引擎         |
 | telescope.nvim       | https://github.com/nvim-telescope/telescope.nvim     | 模糊查找         |
 | nvim-tree.lua        | https://github.com/kyazdani42/nvim-tree.lua          | 文件浏览器       |
-| tokoynight.nvim      | https://github.com/folke/tokyonight.nvim             | 主题             |
 | nvim                 | https://github.com/catppuccin/nvim                   | 主题             |
 | lualine.nvim         | https://github.com/nvim-lualine/lualine.nvim         | 状态栏           |
 | bufferline.nvim      | https://github.com/akinsho/bufferline.nvim           | 文件栏           |
@@ -89,6 +88,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
 | nvim-dap-ui     | https://github.com/rcarriga/nvim-dap-ui    | 调试界面 |
 | project.nvim    | https://github.com/ahmedkhalf/project.nvim | 项目管理 |
 | nvim-ts-rainbow | https://github.com/p00f/nvim-ts-rainbow    | 彩虹括号 |
+| tokoynight.nvim | https://github.com/folke/tokyonight.nvim   | 主题     |
 
 ## 快捷键
 
@@ -111,6 +111,13 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
 | `<leader>eo` | 打开文件浏览器 |
 | `<leader>ec` | 关闭文件浏览器 |
 
+#### 查找
+
+| 操作         | 效果                 |
+| ------------ | -------------------- |
+| `<leader>ff` | 查找文件             |
+| `<leader>fr` | 查找之前打开过的文件 |
+
 #### 终端
 
 | 操作        | 效果              |
@@ -123,4 +130,10 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim +PackerSync
 | 操作        | 效果             |
 | ----------- | ---------------- |
 | `<leader>p` | 打开代码错误窗口 |
+
+#### 更新
+
+| 操作        | 效果     |
+| ----------- | -------- |
+| `<leader>u` | 更新插件 |
 

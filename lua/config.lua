@@ -218,17 +218,24 @@ local wk = require("which-key")
 
 wk.register ({
   e = {
-    name = "File Explorer",
+    name = "+File Explorer",
     o = {"<cmd>NvimTreeOpen<cr>", "Open File Explorer"},
     c = {"<cmd>NvimTreeClose<cr>", "Close File Explorer"}
   },
   t = {"<cmd>ToggleTerm<cr>", "Create a new Terminal"},
   s = {
-    name = "Save File options",
+    name = "+Save File options",
     s = {"<cmd>w<cr>", "Save File Only"},
     q = {"<cmd>wq<cr>", "Save and Quit"},
+  },
+  f = {
+    name = "+Find",
+    f = {"<cmd>Telescope find_files<cr>", "Find File"},
+    r = {"<cmd>Telescope oldfiles<cr>", "Find Recent File"},
   },
   q = {"<cmd>q<cr>", "Quit"},
   p = {"<cmd>Trouble<cr>", "Problem Line"},
   g = {"<cmd>lua _lazygit_toggle()<CR>", "Lazygit"},
+  d = {"<cmd>Dashboard<cr>", "Dashboard"},
+  u = {"<cmd>PackerSync<cr>", "Update Plugins"},
 }, {prefix = "<leader>"})
