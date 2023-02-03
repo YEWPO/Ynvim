@@ -213,6 +213,13 @@ function _lazygit_toggle()
   lazygit:toggle()
 end
 
+-- Noice Setting
+require("noice").setup({
+  cmdline = {
+    view = "cmdline",
+  },
+})
+
 -- Which key mappings
 local wk = require("which-key")
 
@@ -233,9 +240,24 @@ wk.register ({
     f = {"<cmd>Telescope find_files<cr>", "Find File"},
     r = {"<cmd>Telescope oldfiles<cr>", "Find Recent File"},
   },
-  q = {"<cmd>q<cr>", "Quit"},
-  p = {"<cmd>Trouble<cr>", "Problem Line"},
-  g = {"<cmd>lua _lazygit_toggle()<CR>", "Lazygit"},
+  q = {
+    name = "+Quit Options",
+    q = {"<cmd>q<cr>", "Quit"},
+    a = {"<cmd>qa<cr>", "Quit All"},
+    f = {"<cmd>q!<cr>", "Quit Force"},
+    F = {"<cmd>qa!<cr>", "Quit All Force"},
+  },
+  P = {"<cmd>Trouble<cr>", "Problem Line"},
+  g = {"<cmd>lua _lazygit_toggle()<cr>", "Lazygit"},
   d = {"<cmd>Dashboard<cr>", "Dashboard"},
-  u = {"<cmd>PackerSync<cr>", "Update Plugins"},
+  p = {
+    name = "+Packer",
+    s = {"<cmd>PackerSync<cr>", "PackerSync"},
+    c = {"<cmd>PackerCompile<cr>", "PackerCompile"},
+  },
+  b = {
+    name = "+Bufferline",
+    l = {"<cmd>BufferLineCycleNext<cr>", "Next Buffer"},
+    h = {"<cmd>BufferLineCyclePrev<cr>", "Prev Buffer"},
+  },
 }, {prefix = "<leader>"})

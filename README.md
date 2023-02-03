@@ -18,9 +18,8 @@
 
 ## 配置要求
 
-- Neovim >= 0.8.0 （不建议低版本）
+- [Neovim](https://neovim.io/) >= 0.8.0 （不建议低版本）
 - [nvm](https://github.com/nvm-sh/nvm)（用于管理`nodejs`版本）
-- python3
 - a [Nerd Font](https://www.nerdfonts.com/)（一些特殊符号LOGO的显示）
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/) 
 - [lazygit](https://github.com/jesseduffield/lazygit)（该配置中提供了对lazygit的支持）
@@ -95,7 +94,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 
 ## 快捷键
 
-> `<leader>`为`\`。
+> `<leader>`为`<space>`。
 
 ### Normal Mode
 
@@ -105,7 +104,22 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 | ------------ | ---------- |
 | `<leader>ss` | 保存文件   |
 | `<leader>sq` | 保存并退出 |
-| `<leader>q`  | 普通退出   |
+
+#### 退出
+
+| 操作         | 效果         |
+| ------------ | ------------ |
+| `<leader>qq` | 普通退出     |
+| `<leader>qf` | 强制退出     |
+| `<leader>qa` | 全部退出     |
+| `<leader>qF` | 强制全部退出 |
+
+#### 文件切换
+
+| 操作         | 效果                 |
+| ------------ | -------------------- |
+| `<leader>bl` | 文件栏循环下一个文件 |
+| `<leader>bh` | 文件栏循环上一个文件 |
 
 #### 文件浏览器
 
@@ -132,11 +146,15 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 
 | 操作        | 效果             |
 | ----------- | ---------------- |
-| `<leader>p` | 打开代码错误窗口 |
+| `<leader>P` | 打开代码错误窗口 |
 
-#### 更新
+#### 插件
 
-| 操作        | 效果     |
-| ----------- | -------- |
-| `<leader>u` | 更新插件 |
+| 操作         | 效果     |
+| ------------ | -------- |
+| `<leader>ps` | 更新插件 |
+| `<leader>pc` | 编译配置 |
 
+## 插件具体配置
+
+见[nvim-config](http://43.139.35.156/75/nvim-config)
