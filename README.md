@@ -10,7 +10,7 @@
 
 文件管理，终端，代码检查，`gitsigns`：
 
-<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230202182126605.png" alt="image-20230202182126605" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230204191935253.png" alt="image-20230204191935253" style="zoom:25%;" />
 
 查找及预览：
 
@@ -20,9 +20,19 @@
 
 - [Neovim](https://neovim.io/) >= 0.8.0 （不建议低版本）
 - [nvm](https://github.com/nvm-sh/nvm)（用于管理`nodejs`版本）
-- a [Nerd Font](https://www.nerdfonts.com/)（一些特殊符号LOGO的显示）
+- [Nerd Font](https://www.nerdfonts.com/)（一些特殊符号LOGO的显示）
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/) 
 - [lazygit](https://github.com/jesseduffield/lazygit)（该配置中提供了对lazygit的支持）
+
+## 文件树
+
+```
+.
+├── init.vim （基本的设置，比如设置行号和缩进）
+├── lua
+    ├── config.lua （插件的具体配置在这个文件内，具体是什么插件的注释有分层注解）
+    └── plugins.lua （添加的插件都放在了这里）
+```
 
 ## 使用方法
 
@@ -45,10 +55,6 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 **报错请忽略**。安装完成后，先退出`Packer`，再输入`:q<CR>`退出后将**自动**重新运行`nvim`，等待剩余项目安装完成。之后就可以正常使用了。
 
 一些语言服务需要自己在`Mason`中安装。
-
-### Windows
-
-未测试
 
 ## 插件
 
