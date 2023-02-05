@@ -5,7 +5,7 @@ require('impatient')
 -- Nvim Treesitter Setting
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the four listed parsers should always be installed)
-  ensure_installed = { "c", "cpp", "lua", "vim", "help" },
+  ensure_installed = { "c", "cpp", "lua", "vim", "help", "java", "python" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = true,
@@ -116,7 +116,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
  
 local lspconfig = require('lspconfig')
  
-local servers = { 'clangd' }
+local servers = { 'clangd', 'jdtls', 'pyright' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     capabilities = capabilities,
@@ -262,4 +262,5 @@ wk.register ({
     l = {"<cmd>BufferLineCycleNext<cr>", "Next Buffer"},
     h = {"<cmd>BufferLineCyclePrev<cr>", "Prev Buffer"},
   },
+  c = {"<cmd>e ~/.config/nvim/lua/config.lua<cr>", "Configuration"},
 }, {prefix = "<leader>"})

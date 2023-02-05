@@ -121,7 +121,7 @@ require('packer').startup({function(use)
           },
           center = {
             {
-              icon = '',
+              icon = ' ',
               icon_hl = 'Title',
               desc = 'New File',
               desc_hl = 'String',
@@ -130,7 +130,7 @@ require('packer').startup({function(use)
               action = 'enew'
             },
             {
-              icon = '',
+              icon = ' ',
               icon_hl = 'Title',
               desc = 'Find Recent File',
               desc_hl = 'String',
@@ -139,7 +139,7 @@ require('packer').startup({function(use)
               action = 'Telescope oldfiles'
             },
             {
-              icon = '',
+              icon = ' ',
               icon_hl = 'Title',
               desc = 'File Explorer',
               desc_hl = 'String',
@@ -148,7 +148,7 @@ require('packer').startup({function(use)
               action = 'NvimTreeOpen'
             },
             {
-              icon = '',
+              icon = ' ',
               icon_hl = 'Title',
               desc = 'Update Plugins',
               desc_hl = 'String',
@@ -157,7 +157,16 @@ require('packer').startup({function(use)
               action = 'PackerSync'
             },
             {
-              icon = '',
+              icon = ' ',
+              icon_hl = 'Title',
+              desc = 'Configuration',
+              desc_hl = 'String',
+              key = 'c',
+              key_hl = 'Number',
+              action = 'e ~/.config/nvim/lua/config.lua'
+            },
+            {
+              icon = ' ',
               icon_hl = 'Title',
               desc = 'Exit',
               desc_hl = 'String',

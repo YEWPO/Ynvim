@@ -6,7 +6,7 @@
 
 启动界面：
 
-<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230202181850056.png" alt="image-20230202181850056" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230205133359722.png" alt="image-20230205133359722" style="zoom:25%;" />
 
 文件管理，终端，代码检查，`gitsigns`：
 
@@ -29,7 +29,7 @@
 ```
 .
 ├── init.vim （基本的设置，比如设置行号和缩进）
-├── lua
+└── lua
     ├── config.lua （插件的具体配置在这个文件内，具体是什么插件的注释有分层注解）
     └── plugins.lua （添加的插件都放在了这里）
 ```
@@ -110,6 +110,12 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 | ------------ | ---------- |
 | `<leader>ss` | 保存文件   |
 | `<leader>sq` | 保存并退出 |
+
+#### 设置
+
+| 操作        | 效果         |
+| ----------- | ------------ |
+| `<leader>c` | 修改配置文件 |
 
 #### 退出
 
