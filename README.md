@@ -23,6 +23,7 @@
 - [Nerd Font](https://www.nerdfonts.com/)（一些特殊符号LOGO的显示）
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/) 
 - [lazygit](https://github.com/jesseduffield/lazygit)（该配置中提供了对lazygit的支持）
+- 一个终端模拟器（用于调试，**需要修改config.lua中的dap.defaults.external_terminal的路径**）
 
 ## 文件树
 
@@ -85,6 +86,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 | nvim-notify          | https://github.com/rcarriga/nvim-notify              | 通知             |
 | impatient.nvim       | https://github.com/lewis6991/impatient.nvim          | 性能优化         |
 | noice                | https://github.com/folke/noice.nvim                  | 组件             |
+| nvim-dap             | https://github.com/mfussenegger/nvim-dap             | 调试             |
 
 ### 未配置
 
@@ -92,7 +94,6 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 | --------------- | ------------------------------------------ | -------- |
 | nvim-autopairs  | https://github.com/windwp/nvim-autopairs   | 括号补全 |
 | hop.nvim        | https://github.com/phaazon/hop.nvim        | 代码跳跃 |
-| nvim-dap        | https://github.com/mfussenegger/nvim-dap   | 调试     |
 | nvim-dap-ui     | https://github.com/rcarriga/nvim-dap-ui    | 调试界面 |
 | project.nvim    | https://github.com/ahmedkhalf/project.nvim | 项目管理 |
 | nvim-ts-rainbow | https://github.com/p00f/nvim-ts-rainbow    | 彩虹括号 |
@@ -166,6 +167,21 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 | ------------ | -------- |
 | `<leader>ps` | 更新插件 |
 | `<leader>pc` | 编译配置 |
+
+#### 调试
+
+| 操作          | 效果           |
+| ------------- | -------------- |
+| `<leader>dc`  | 运行或继续     |
+| `<leader>dt`  | 设置或取消断点 |
+| `<leader>de`  | 结束调试       |
+| `<leader>dn`  | 下一步         |
+| `<leader>di`  | 单步进入       |
+| `<leader>do`  | 单步跳出       |
+| `<leader>dC`  | 执行到光标处   |
+| `<leader>dro` | 打开repl       |
+| `<leader>drt` | 切换repl       |
+| `<leader>drc` | 关闭repl       |
 
 ## 插件具体配置
 

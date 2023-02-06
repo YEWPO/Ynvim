@@ -163,12 +163,13 @@ require('lualine').setup {
     section_separators = {left = '', right = ''},
     theme = "catppuccin",
     disabled_filetypes = {
-      statusline = {'NvimTree', 'toggleterm'},
+      statusline = {'NvimTree', 'toggleterm', 'dap-repl'},
       winbar = {},
     },
     ignore_focus = {
       'NvimTree',
       'toggleterm',
+      'dap-repl',
     },
   }
 }
@@ -195,7 +196,6 @@ local null_ls = require("null-ls")
 null_ls.setup({
   sources = {
     null_ls.builtins.formatting.clang_format,
-    null_ls.builtins.diagnostics.cpplint,
     null_ls.builtins.completion.luasnip,
   },
 })
@@ -221,6 +221,40 @@ require("noice").setup({
     view = "cmdline",
   },
 })
+
+-- DAP Setting
+local dap = require('dap')
+dap.adapters.cppdbg = {
+  id = 'cppdbg',
+  type = 'executable',
+  command = '/home/yewpo/.local/share/nvim/mason/packages/cpptools/extension/debugAdapters/bin/OpenDebugAD7'
+}
+dap.defaults.fallback.external_terminal = {
+  command = '/home/yewpo/.local/bin/kitty',
+  args = {},
+}
+dap.configurations.cpp = {
+  {
+    name = "Launch GDB",
+    type = "cppdbg",
+    request = "launch",
+    program = '${fileDirname}/${fileBasenameNoExtension}',
+    args = {},
+    cwd = '${workspaceFolder}',
+    stopAtEntry = false,
+    externalConsole = true,
+    MIMode = "gdb",
+    miDebuggerPath = '/usr/bin/gdb',
+    setupCommands = {  
+      { 
+         text = '-enable-pretty-printing',
+         description =  'enable pretty printing',
+         ignoreFailures = false 
+      },
+    },
+  },
+}
+dap.configurations.c = dap.configurations.cpp
 
 -- Which key mappings
 local wk = require("which-key")
@@ -263,4 +297,21 @@ wk.register ({
     h = {"<cmd>BufferLineCyclePrev<cr>", "Prev Buffer"},
   },
   c = {"<cmd>e ~/.config/nvim/lua/config.lua<cr>", "Configuration"},
+  m = {"<cmd>Mason<cr>", "Mason"},
+  d = {
+    name = "+Debug",
+    e = {"<cmd>lua require('dap').terminate()<cr>", "End"},
+    t = {"<cmd>lua require('dap').toggle_breakpoint()<cr>", "Toggle Breakpoint"},
+    C = {"<cmd>lua require('dap').run_to_cursor()<cr>", "Move to Cursor"},
+    c = {"<cmd>lua require('dap').continue()<cr>", "Continue"},
+    n = {"<cmd>lua require('dap').step_over()<cr>", "Step Over"},
+    i = {"<cmd>lua require('dap').step_into()<cr>", "Step Into"},
+    o = {"<cmd>lua require('dap').step_out()<cr>", "Step Out"},
+    r = {
+      name = "+Repl",
+      o = {"<cmd>lua require('dap').repl.open()<cr>", "Repl Open"},
+      t = {"<cmd>lua require('dap').repl.toggle()<cr>", "Repl Toggle"},
+      c = {"<cmd>lua require('dap').repl.close()<cr>", "Reql Close"},
+    },
+  },
 }, {prefix = "<leader>"})

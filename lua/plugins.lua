@@ -2,7 +2,8 @@ vim.g.loaded_newtrw = 1
 vim.g.loaded_newtrPlugin = 1
 vim.opt.termguicolors = true
 vim.g.mapleader = ' '
- 
+vim.fn.sign_define('DapBreakpoint', {text='🛑', texthl='', linehl='', numhl=''}) 
+
 local ensure_packer = function()
   local fn = vim.fn
   local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
@@ -20,13 +21,16 @@ require('packer').startup({function(use)
   -- Packer can manage itself 
   use 'wbthomason/packer.nvim'
  
-  -- lsp installer
+  -- Lsp installer
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
   use 'neovim/nvim-lspconfig'
  
   use 'nvim-lua/plenary.nvim'
   use 'jose-elias-alvarez/null-ls.nvim'
+
+  -- DAP
+  use 'mfussenegger/nvim-dap'
  
   -- Completion
   use'hrsh7th/cmp-nvim-lsp'
@@ -240,3 +244,4 @@ config = {
 
 vim.cmd.colorscheme "catppuccin"
 vim.notify = require("notify")
+require('config')
