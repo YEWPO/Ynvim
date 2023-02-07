@@ -1,9 +1,3 @@
-vim.g.loaded_newtrw = 1
-vim.g.loaded_newtrPlugin = 1
-vim.opt.termguicolors = true
-vim.g.mapleader = ' '
-vim.fn.sign_define('DapBreakpoint', {text='🛑', texthl='', linehl='', numhl=''}) 
-
 local ensure_packer = function()
   local fn = vim.fn
   local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
@@ -199,34 +193,8 @@ require('packer').startup({function(use)
   }
 
   -- Utils
-  use({
-    "folke/noice.nvim",
-    config = function()
-      require("noice").setup({
-        lsp = {
-          -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
-          override = {
-            ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-            ["vim.lsp.util.stylize_markdown"] = true,
-            ["cmp.entry.get_documentation"] = true,
-          },
-        },
-        -- you can enable a preset for easier configuration
-        presets = {
-          bottom_search = true, -- use a classic bottom cmdline for search
-          command_palette = true, -- position the cmdline and popupmenu together
-          long_message_to_split = true, -- long messages will be sent to a split
-          inc_rename = false, -- enables an input dialog for inc-rename.nvim
-          lsp_doc_border = false, -- add a border to hover docs and signature help
-        },
-      })
-    end,
-    requires = {
-      "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
-      }
-  })
- 
+  use 'rcarriga/nvim-notify'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
@@ -242,6 +210,4 @@ config = {
 }
 })
 
-vim.cmd.colorscheme "catppuccin"
-vim.notify = require("notify")
 require('config')

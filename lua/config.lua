@@ -1,3 +1,11 @@
+vim.g.loaded_newtrw = 1
+vim.g.loaded_newtrPlugin = 1
+vim.opt.termguicolors = true
+vim.g.mapleader = ' '
+vim.fn.sign_define('DapBreakpoint', {text='🛑', texthl='', linehl='', numhl=''}) 
+vim.cmd.colorscheme "catppuccin"
+vim.notify = require("notify")
+
 require('mason').setup()
 require('mason-lspconfig').setup()
 require('impatient')
@@ -148,16 +156,6 @@ require('nvim-tree').setup({
  
 -- Status Line Setting
 require('lualine').setup {
-  sections = {
-    lualine_x = {
-      {
-        require("noice").api.statusline.mode.get,
-        cond = require("noice").api.statusline.mode.has,
-        color = { fg = "#ff9e64" },
-      },
-      'encoding', 'fileformat', 'filetype'
-    },
-  },
   options = {
     component_separators = {left = '', right = ''},
     section_separators = {left = '', right = ''},
@@ -214,13 +212,6 @@ local lazygit = Terminal:new({
 function _lazygit_toggle()
   lazygit:toggle()
 end
-
--- Noice Setting
-require("noice").setup({
-  cmdline = {
-    view = "cmdline",
-  },
-})
 
 -- DAP Setting
 local dap = require('dap')
