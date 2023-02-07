@@ -10,7 +10,7 @@
 
 文件管理，终端，代码检查，`gitsigns`：
 
-<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230204191935253.png" alt="image-20230204191935253" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230207113218071.png" alt="image-20230207113218071" style="zoom:25%;" />
 
 查找及预览：
 
@@ -23,7 +23,6 @@
 - [Nerd Font](https://www.nerdfonts.com/)（一些特殊符号LOGO的显示）
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/) 
 - [lazygit](https://github.com/jesseduffield/lazygit)（该配置中提供了对lazygit的支持）
-- 一个终端模拟器（用于调试，**需要修改config.lua中的dap.defaults.external_terminal的路径**）
 
 ## 文件树
 
@@ -85,7 +84,6 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 | comment              | https://github.com/numToStr/Comment.nvim             | 代码注释         |
 | nvim-notify          | https://github.com/rcarriga/nvim-notify              | 通知             |
 | impatient.nvim       | https://github.com/lewis6991/impatient.nvim          | 性能优化         |
-| noice                | https://github.com/folke/noice.nvim                  | 组件             |
 | nvim-dap             | https://github.com/mfussenegger/nvim-dap             | 调试             |
 
 ### 未配置
@@ -98,6 +96,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 | project.nvim    | https://github.com/ahmedkhalf/project.nvim | 项目管理 |
 | nvim-ts-rainbow | https://github.com/p00f/nvim-ts-rainbow    | 彩虹括号 |
 | tokoynight.nvim | https://github.com/folke/tokyonight.nvim   | 主题     |
+| noice           | https://github.com/folke/noice.nvim        | 组件     |
 
 ## 快捷键
 

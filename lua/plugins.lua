@@ -53,7 +53,11 @@ require('packer').startup({function(use)
  
   -- Terminal
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-    require("toggleterm").setup()
+    require("toggleterm").setup() {
+      open_mappings = [[<c-\>]],
+      insert_mappings = true,
+      terminal_mappings = true,
+    }
   end}
  
   -- Comment

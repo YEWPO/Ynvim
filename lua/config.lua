@@ -220,10 +220,7 @@ dap.adapters.cppdbg = {
   type = 'executable',
   command = '/home/yewpo/.local/share/nvim/mason/packages/cpptools/extension/debugAdapters/bin/OpenDebugAD7'
 }
-dap.defaults.fallback.external_terminal = {
-  command = '/home/yewpo/.local/bin/kitty',
-  args = {},
-}
+dap.defaults.fallback.terminal_win_cmd = 'ToggleTerm'
 dap.configurations.cpp = {
   {
     name = "Launch GDB",
@@ -233,7 +230,7 @@ dap.configurations.cpp = {
     args = {},
     cwd = '${workspaceFolder}',
     stopAtEntry = false,
-    externalConsole = true,
+    externalConsole = false,
     MIMode = "gdb",
     miDebuggerPath = '/usr/bin/gdb',
     setupCommands = {  
