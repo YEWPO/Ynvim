@@ -285,6 +285,8 @@ wk.register ({
     h = {"<cmd>BufferLineCyclePrev<cr>", "Prev Buffer"},
   },
   c = {"<cmd>e ~/.config/nvim/lua/config.lua<cr>", "Configuration"},
+  c = {"\"+y", "Copy to Clipboard", mode = "v"},
+  i = {"\"+p", "Insert from Clipboard"},
   m = {"<cmd>Mason<cr>", "Mason"},
   d = {
     name = "+Debug",

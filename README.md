@@ -106,10 +106,11 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 
 #### 文件
 
-| 操作         | 效果       |
-| ------------ | ---------- |
-| `<leader>ss` | 保存文件   |
-| `<leader>sq` | 保存并退出 |
+| 操作         | 效果                   |
+| ------------ | ---------------------- |
+| `<leader>ss` | 保存文件               |
+| `<leader>sq` | 保存并退出             |
+| `<leader>i`  | 粘贴系统剪切板中的内容 |
 
 #### 设置
 
@@ -181,6 +182,12 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 | `<leader>dro` | 打开repl       |
 | `<leader>drt` | 切换repl       |
 | `<leader>drc` | 关闭repl       |
+
+### Visual Mode
+
+| 操作        | 效果                         |
+| ----------- | ---------------------------- |
+| `<leader>c` | 复制选中的内容到系统剪切板上 |
 
 ## 插件具体配置
 
