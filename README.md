@@ -117,9 +117,10 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 
 #### 设置
 
-| 操作        | 效果         |
-| ----------- | ------------ |
-| `<leader>c` | 修改配置文件 |
+| 操作         | 效果         |
+| ------------ | ------------ |
+| `<leader>Yc` | 修改配置文件 |
+| `<leader>Yp` | 修改插件文件 |
 
 #### 退出
 

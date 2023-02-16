@@ -278,7 +278,11 @@ wk.register ({
     l = {"<cmd>BufferLineCycleNext<cr>", "Next Buffer"},
     h = {"<cmd>BufferLineCyclePrev<cr>", "Prev Buffer"},
   },
-  c = {"<cmd>e ~/.config/nvim/lua/config.lua<cr>", "Configuration"},
+  Y = {
+    name = "+Configuration",
+    p = {"<cmd>e ~/.config/nvim/lua/plugins.lua<cr>", "Edit plugins.lua"},
+    c = {"<cmd>e ~/.config/nvim/lua/config.lua<cr>", "Edit config.lua"},
+  },
   c = {"\"+y", "Copy to Clipboard", mode = "v"},
   i = {"\"+p", "Insert from Clipboard"},
   m = {"<cmd>Mason<cr>", "Mason"},
