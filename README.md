@@ -60,31 +60,34 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 
 ### 已配置
 
-| 插件名               | 仓库地址                                             | 类别             |
-| -------------------- | ---------------------------------------------------- | ---------------- |
-| packer.nvim          | https://github.com/wbthomason/packer.nvim            | 插件管理         |
-| dashboard.nvim       | https://github.com/glepnir/dashboard-nvim            | 启动界面         |
-| nvim-lspconfig       | https://github.com/neovim/nvim-lspconfig             | 语言服务         |
-| null-ls              | https://github.com/jose-elias-alvarez/null-ls.nvim   | 语言服务         |
-| mason                | https://github.com/williamboman/mason.nvim           | 语言服务管理     |
-| mason-lspconfig.nvim | https://github.com/williamboman/mason-lspconfig.nvim | 语言服务衔接工具 |
-| trouble.nvim         | https://github.com/folke/trouble.nvim                | 代码诊断         |
-| nvim-cmp             | https://github.com/hrsh7th/nvim-cmp                  | 提示补全         |
-| nvim-treesitter      | https://github.com/nvim-treesitter/nvim-treesitter   | 语法高亮         |
-| Luasnip              | https://github.com/L3MON4D3/LuaSnip                  | 片段引擎         |
-| telescope.nvim       | https://github.com/nvim-telescope/telescope.nvim     | 模糊查找         |
-| nvim-tree.lua        | https://github.com/kyazdani42/nvim-tree.lua          | 文件浏览器       |
-| nvim                 | https://github.com/catppuccin/nvim                   | 主题             |
-| lualine.nvim         | https://github.com/nvim-lualine/lualine.nvim         | 状态栏           |
-| bufferline.nvim      | https://github.com/akinsho/bufferline.nvim           | 文件栏           |
-| nvim-web-devicons    | https://github.com/kyazdani42/nvim-web-devicons      | 图标             |
-| toggleterm.nvim      | https://github.com/akinsho/toggleterm.nvim           | 终端             |
-| gitsigns.nvim        | https://github.com/lewis6991/gitsigns.nvim           | git栏            |
-| which-key            | https://github.com/folke/which-key.nvim              | 快捷键           |
-| comment              | https://github.com/numToStr/Comment.nvim             | 代码注释         |
-| nvim-notify          | https://github.com/rcarriga/nvim-notify              | 通知             |
-| impatient.nvim       | https://github.com/lewis6991/impatient.nvim          | 性能优化         |
-| nvim-dap             | https://github.com/mfussenegger/nvim-dap             | 调试             |
+| 插件名                  | 仓库地址                                                   | 类别             |
+| ----------------------- | ---------------------------------------------------------- | ---------------- |
+| packer.nvim             | https://github.com/wbthomason/packer.nvim                  | 插件管理         |
+| dashboard.nvim          | https://github.com/glepnir/dashboard-nvim                  | 启动界面         |
+| nvim-lspconfig          | https://github.com/neovim/nvim-lspconfig                   | 语言服务         |
+| null-ls                 | https://github.com/jose-elias-alvarez/null-ls.nvim         | 语言服务         |
+| mason                   | https://github.com/williamboman/mason.nvim                 | 语言服务管理     |
+| mason-lspconfig.nvim    | https://github.com/williamboman/mason-lspconfig.nvim       | 语言服务衔接工具 |
+| trouble.nvim            | https://github.com/folke/trouble.nvim                      | 代码诊断         |
+| nvim-cmp                | https://github.com/hrsh7th/nvim-cmp                        | 提示补全         |
+| nvim-treesitter         | https://github.com/nvim-treesitter/nvim-treesitter         | 语法高亮         |
+| Luasnip                 | https://github.com/L3MON4D3/LuaSnip                        | 片段引擎         |
+| telescope.nvim          | https://github.com/nvim-telescope/telescope.nvim           | 模糊查找         |
+| nvim-tree.lua           | https://github.com/kyazdani42/nvim-tree.lua                | 文件浏览器       |
+| nvim                    | https://github.com/catppuccin/nvim                         | 主题             |
+| lualine.nvim            | https://github.com/nvim-lualine/lualine.nvim               | 状态栏           |
+| bufferline.nvim         | https://github.com/akinsho/bufferline.nvim                 | 文件栏           |
+| nvim-web-devicons       | https://github.com/kyazdani42/nvim-web-devicons            | 图标             |
+| toggleterm.nvim         | https://github.com/akinsho/toggleterm.nvim                 | 终端             |
+| gitsigns.nvim           | https://github.com/lewis6991/gitsigns.nvim                 | git栏            |
+| which-key               | https://github.com/folke/which-key.nvim                    | 快捷键           |
+| comment                 | https://github.com/numToStr/Comment.nvim                   | 代码注释         |
+| nvim-notify             | https://github.com/rcarriga/nvim-notify                    | 通知             |
+| impatient.nvim          | https://github.com/lewis6991/impatient.nvim                | 性能优化         |
+| nvim-dap                | https://github.com/mfussenegger/nvim-dap                   | 调试             |
+| nvim-ts-rainbow2        | https://github.com/HiPhish/nvim-ts-rainbow2                | 彩虹括号         |
+| nvim-treesitter-context | https://github.com/nvim-treesitter/nvim-treesitter-context | 函数提示         |
+| nvim-metals             | https://github.com/scalameta/nvim-metals/                  | scala语言服务    |
 
 ### 未配置
 

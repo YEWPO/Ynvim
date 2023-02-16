@@ -84,6 +84,7 @@ require('packer').startup({function(use)
     end,
   }
   use 'HiPhish/nvim-ts-rainbow2'
+  use 'nvim-treesitter/nvim-treesitter-context'
  
   -- Telescope
   use {
