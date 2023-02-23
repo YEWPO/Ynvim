@@ -88,6 +88,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 | nvim-ts-rainbow2        | https://github.com/HiPhish/nvim-ts-rainbow2                | 彩虹括号         |
 | nvim-treesitter-context | https://github.com/nvim-treesitter/nvim-treesitter-context | 函数提示         |
 | nvim-metals             | https://github.com/scalameta/nvim-metals/                  | scala语言服务    |
+| nvim-dap-ui             | https://github.com/rcarriga/nvim-dap-ui                    | 调试界面         |
 
 ### 未配置
 
@@ -95,9 +96,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 | --------------- | ------------------------------------------ | -------- |
 | nvim-autopairs  | https://github.com/windwp/nvim-autopairs   | 括号补全 |
 | hop.nvim        | https://github.com/phaazon/hop.nvim        | 代码跳跃 |
-| nvim-dap-ui     | https://github.com/rcarriga/nvim-dap-ui    | 调试界面 |
 | project.nvim    | https://github.com/ahmedkhalf/project.nvim | 项目管理 |
-| nvim-ts-rainbow | https://github.com/p00f/nvim-ts-rainbow    | 彩虹括号 |
 | tokoynight.nvim | https://github.com/folke/tokyonight.nvim   | 主题     |
 | noice           | https://github.com/folke/noice.nvim        | 组件     |
 
