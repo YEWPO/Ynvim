@@ -118,7 +118,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
  
 local lspconfig = require('lspconfig')
  
-local servers = { 'clangd', 'jdtls', 'pyright' }
+local servers = { 'clangd', 'pyright', 'html' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     capabilities = capabilities,
@@ -302,4 +302,9 @@ wk.register ({
       c = {"<cmd>lua require('dap').repl.close()<cr>", "Reql Close"},
     },
   },
+  w = {
+    name = "+Windows Option",
+    v = {"<cmd>split<cr>", "Vertical Split"},
+    h = {"<cmd>vsplit<cr>", "Horizon Split"},
+  }
 }, {prefix = "<leader>"})

@@ -115,6 +115,13 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
 | `<leader>sq` | 保存并退出             |
 | `<leader>i`  | 粘贴系统剪切板中的内容 |
 
+#### 窗口
+
+| 操作         | 效果         |
+| ------------ | ------------ |
+| `<leader>wh` | 水平分割串口 |
+| `<leader>wv` | 垂直分割窗口 |
+
 #### 设置
 
 | 操作         | 效果         |
