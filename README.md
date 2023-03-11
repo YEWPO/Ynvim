@@ -49,7 +49,7 @@ rm -rf ~/.cache/nvim
 获取和安装插件：
 
 ```shell
-git clone https://github.com/YEWPO/Ynvim ~/.config/nvim && nvim && nvim +Mason
+git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvim +Mason
 ```
 
 **报错请忽略**。安装完成后，先退出`Packer`，再输入`:q<CR>`退出后将**自动**重新运行`nvim`，等待剩余项目安装完成。之后就可以正常使用了。
