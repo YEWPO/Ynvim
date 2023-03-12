@@ -85,9 +85,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 | nvim-notify             | https://github.com/rcarriga/nvim-notify                    | 通知             |
 | impatient.nvim          | https://github.com/lewis6991/impatient.nvim                | 性能优化         |
 | nvim-dap                | https://github.com/mfussenegger/nvim-dap                   | 调试             |
-| nvim-ts-rainbow2        | https://github.com/HiPhish/nvim-ts-rainbow2                | 彩虹括号         |
 | nvim-treesitter-context | https://github.com/nvim-treesitter/nvim-treesitter-context | 函数提示         |
-| nvim-metals             | https://github.com/scalameta/nvim-metals/                  | scala语言服务    |
 | nvim-dap-ui             | https://github.com/rcarriga/nvim-dap-ui                    | 调试界面         |
 
 ### 未配置

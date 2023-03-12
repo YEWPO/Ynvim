@@ -35,8 +35,6 @@ require('packer').startup({function(use)
   use'hrsh7th/nvim-cmp'
   use'L3MON4D3/LuaSnip'
   use'saadparwaiz1/cmp_luasnip'
-
-  use({'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" }})
  
   -- Troubles
   use {
@@ -84,7 +82,6 @@ require('packer').startup({function(use)
       ts_update()
     end,
   }
-  use 'HiPhish/nvim-ts-rainbow2'
   use 'nvim-treesitter/nvim-treesitter-context'
  
   -- Telescope

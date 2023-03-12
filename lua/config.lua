@@ -34,12 +34,6 @@ require'nvim-treesitter.configs'.setup {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
-  rainbow = {
-    enable = true,
-    disable = { "html" },
-    query = 'rainbow-parens',
-    strategy = require 'ts-rainbow.strategy.global',
-  },
 }
  
 -- Completion Setting
