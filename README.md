@@ -87,6 +87,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 | nvim-dap                | https://github.com/mfussenegger/nvim-dap                   | 调试             |
 | nvim-treesitter-context | https://github.com/nvim-treesitter/nvim-treesitter-context | 函数提示         |
 | nvim-dap-ui             | https://github.com/rcarriga/nvim-dap-ui                    | 调试界面         |
+| nvim-metals             | https://github.com/scalameta/nvim-metals                   | BSP              |
 
 ### 未配置
 
