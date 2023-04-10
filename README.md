@@ -6,7 +6,7 @@
 
 启动界面：
 
-<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230205133359722.png" alt="image-20230205133359722" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/YEWPO/yewpoblogonlinePic/main/image-20230410222854635.png" alt="image-20230410222854635" style="zoom:25%;" />
 
 文件管理，终端，代码检查，`gitsigns`：
 
