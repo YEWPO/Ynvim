@@ -1,5 +1,6 @@
 set relativenumber
 set number
+set nowrap
  
 set tabstop=2
 set shiftwidth=2

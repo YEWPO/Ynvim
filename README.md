@@ -115,10 +115,15 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 
 #### 窗口
 
-| 操作         | 效果         |
-| ------------ | ------------ |
-| `<leader>wh` | 水平分割串口 |
-| `<leader>wv` | 垂直分割窗口 |
+| 操作         | 效果           |
+| ------------ | -------------- |
+| `<leader>ws` | 水平分割串口   |
+| `<leader>wv` | 垂直分割窗口   |
+| `<leader>wh` | 跳转到左边窗口 |
+| `<leader>wj` | 跳转到下边窗口 |
+| `<leader>wk` | 跳转到上边窗口 |
+| `<leader>wl` | 跳转到右边窗口 |
+| `<leader>ww` | 跳转到最近窗口 |
 
 #### 设置
 
@@ -159,10 +164,11 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 
 #### 终端
 
-| 操作        | 效果              |
-| ----------- | ----------------- |
-| `<leader>t` | 创建终端          |
-| `<leader>g` | 创建`lazygit`终端 |
+| 操作        | 效果                 |
+| ----------- | -------------------- |
+| `<leader>t` | 创建终端             |
+| `<leader>g` | 创建`lazygit`终端    |
+| `<esc>`     | 在终端模式下退出终端 |
 
 #### 问题
 

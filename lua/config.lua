@@ -207,6 +207,13 @@ function _lazygit_toggle()
   lazygit:toggle()
 end
 
+function _G.set_terminal_keymaps()
+  local opts = {buffer = 0}
+  vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
+end
+
+vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
+
 -- DAP Setting
 local dap = require('dap')
 dap.adapters.cppdbg = {
@@ -316,7 +323,12 @@ wk.register ({
   w = {
     name = "+Windows Option",
     v = {"<cmd>split<cr>", "Vertical Split"},
-    h = {"<cmd>vsplit<cr>", "Horizon Split"},
+    s = {"<cmd>vsplit<cr>", "Horizon Split"},
+    w = {"<c-w><c-w>", "Switch Windows"},
+    l = {"<cmd>wincmd l<cr>", "Right Window"},
+    h = {"<cmd>wincmd h<cr>", "Left Window"},
+    k = {"<cmd>wincmd k<cr>", "Top Window"},
+    j = {"<cmd>wincmd j<cr>", "Button Window"},
   }
 }, {prefix = "<leader>"})
 
