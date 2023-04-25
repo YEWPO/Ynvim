@@ -302,6 +302,7 @@ wk.register ({
     c = {"<cmd>e ~/.config/nvim/lua/config.lua<cr>", "Edit config.lua"},
   },
   c = {"\"+y", "Copy to Clipboard", mode = "v"},
+  C = {"<cmd>%!clang-format<cr>", "ClangFormat"},
   i = {"\"+p", "Insert from Clipboard"},
   m = {"<cmd>Mason<cr>", "Mason"},
   d = {
