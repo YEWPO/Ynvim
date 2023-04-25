@@ -320,6 +320,13 @@ wk.register ({
       c = {"<cmd>lua require('dap').repl.close()<cr>", "Reql Close"},
     },
   },
+  o = {"o<esc>k", "Create a new line below"},
+  h = {
+    name = "+Hop",
+    w = {"<cmd>HopWord<cr>", "HopWord"},
+    l = {"<cmd>HopLine<cr>", "HopLine"},
+    p = {"<cmd>HopPattern<cr>", "HopPattern"},
+  },
   w = {
     name = "+Windows Option",
     v = {"<cmd>split<cr>", "Vertical Split"},

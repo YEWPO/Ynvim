@@ -88,13 +88,13 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 | nvim-treesitter-context | https://github.com/nvim-treesitter/nvim-treesitter-context | 函数提示         |
 | nvim-dap-ui             | https://github.com/rcarriga/nvim-dap-ui                    | 调试界面         |
 | nvim-metals             | https://github.com/scalameta/nvim-metals                   | BSP              |
+| hop.nvim                | https://github.com/phaazon/hop.nvim                        | 代码跳跃         |
 
 ### 未配置
 
 | 插件名          | 仓库地址                                   | 类别     |
 | --------------- | ------------------------------------------ | -------- |
 | nvim-autopairs  | https://github.com/windwp/nvim-autopairs   | 括号补全 |
-| hop.nvim        | https://github.com/phaazon/hop.nvim        | 代码跳跃 |
 | project.nvim    | https://github.com/ahmedkhalf/project.nvim | 项目管理 |
 | tokoynight.nvim | https://github.com/folke/tokyonight.nvim   | 主题     |
 | noice           | https://github.com/folke/noice.nvim        | 组件     |
@@ -157,10 +157,14 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 
 #### 查找
 
-| 操作         | 效果                 |
-| ------------ | -------------------- |
-| `<leader>ff` | 查找文件             |
-| `<leader>fr` | 查找之前打开过的文件 |
+| 操作         | 效果                     |
+| ------------ | ------------------------ |
+| `<leader>ff` | 查找文件                 |
+| `<leader>fr` | 查找之前打开过的文件     |
+| `<leader>o`  | 在该行的下方新建一个新行 |
+| `<leader>hw` | HopWord                  |
+| `<leader>hl` | HopLine                  |
+| `<leader>hp` | HopPattern               |
 
 #### 终端
 
