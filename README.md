@@ -46,6 +46,20 @@ rm -rf ~/.local/share/nvim
 rm -rf ~/.cache/nvim
 ```
 
+**先安装配置要求中的软件**
+
+根据需求安装辅助软件（**墙裂建议安装**）
+
+```shell
+sudo apt install fzf fd-find ripgrep xclip clang-format
+```
+
+安装与自己系统中的python版本相应的虚拟环境，比如：
+
+```shell
+sudo apt install python3.11-venv
+```
+
 获取和安装插件：
 
 ```shell
