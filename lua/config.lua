@@ -12,7 +12,7 @@ require('impatient')
 
 -- Nvim Treesitter Setting
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "cpp", "lua", "vim", "help", "java", "python" },
+  ensure_installed = { "c", "cpp", "lua", "vim", "vimdoc", "java", "python" },
 
   sync_install = true,
 

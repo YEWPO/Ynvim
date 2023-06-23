@@ -57,7 +57,7 @@ sudo apt install fzf fd-find ripgrep xclip clang-format
 安装与自己系统中的python版本相应的虚拟环境，比如：
 
 ```shell
-sudo apt install python3.11-venv
+sudo apt install python3.10-venv
 ```
 
 获取和安装插件：
