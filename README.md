@@ -148,12 +148,14 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 
 #### 退出
 
-| 操作         | 效果         |
-| ------------ | ------------ |
-| `<leader>qq` | 普通退出     |
-| `<leader>qf` | 强制退出     |
-| `<leader>qa` | 全部退出     |
-| `<leader>qF` | 强制全部退出 |
+| 操作         | 效果                   |
+| ------------ | ---------------------- |
+| `<leader>qq` | 普通退出               |
+| `<leader>qf` | 强制退出               |
+| `<leader>qa` | 全部退出               |
+| `<leader>qF` | 强制全部退出           |
+| `<leader>ql` | 关闭当前文件的左侧文件 |
+| `<leader>qr` | 关闭当前文件的右侧文件 |
 
 #### 文件切换
 

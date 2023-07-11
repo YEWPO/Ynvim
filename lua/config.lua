@@ -282,6 +282,8 @@ wk.register ({
     a = {"<cmd>qa<cr>", "Quit All"},
     f = {"<cmd>q!<cr>", "Quit Force"},
     F = {"<cmd>qa!<cr>", "Quit All Force"},
+    l = {"<cmd>BufferLineCloseLeft<cr>", "Close left buffers"},
+    r = {"<cmd>BufferLineCloseRight<cr>", "Close right buffers"},
   },
   P = {"<cmd>Trouble<cr>", "Problem Line"},
   g = {"<cmd>lua _lazygit_toggle()<cr>", "Lazygit"},
