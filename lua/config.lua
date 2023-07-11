@@ -330,8 +330,8 @@ wk.register ({
   },
   w = {
     name = "+Windows Option",
-    v = {"<cmd>split<cr>", "Vertical Split"},
-    s = {"<cmd>vsplit<cr>", "Horizon Split"},
+    s = {"<cmd>split<cr>", "Horizontal Split"},
+    v = {"<cmd>vsplit<cr>", "Vertical Split"},
     w = {"<c-w><c-w>", "Switch Windows"},
     l = {"<cmd>wincmd l<cr>", "Right Window"},
     h = {"<cmd>wincmd h<cr>", "Left Window"},
