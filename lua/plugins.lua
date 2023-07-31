@@ -176,7 +176,7 @@ require('packer').startup({function(use)
               action = 'e ~/.config/nvim/lua/config.lua'
             },
             {
-              icon = ' ',
+              icon = '󰿅 ',
               icon_hl = 'Title',
               desc = 'Exit',
               desc_hl = 'String',
