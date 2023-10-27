@@ -88,7 +88,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 | Luasnip                 | https://github.com/L3MON4D3/LuaSnip                        | 片段引擎         |
 | telescope.nvim          | https://github.com/nvim-telescope/telescope.nvim           | 模糊查找         |
 | nvim-tree.lua           | https://github.com/kyazdani42/nvim-tree.lua                | 文件浏览器       |
-| nvim                    | https://github.com/catppuccin/nvim                         | 主题             |
+| tokoynight.nvim         | https://github.com/folke/tokyonight.nvim                   | 主题             |
 | lualine.nvim            | https://github.com/nvim-lualine/lualine.nvim               | 状态栏           |
 | bufferline.nvim         | https://github.com/akinsho/bufferline.nvim                 | 文件栏           |
 | nvim-web-devicons       | https://github.com/kyazdani42/nvim-web-devicons            | 图标             |
@@ -106,12 +106,12 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 
 ### 未配置
 
-| 插件名          | 仓库地址                                   | 类别     |
-| --------------- | ------------------------------------------ | -------- |
-| nvim-autopairs  | https://github.com/windwp/nvim-autopairs   | 括号补全 |
-| project.nvim    | https://github.com/ahmedkhalf/project.nvim | 项目管理 |
-| tokoynight.nvim | https://github.com/folke/tokyonight.nvim   | 主题     |
-| noice           | https://github.com/folke/noice.nvim        | 组件     |
+| 插件名         | 仓库地址                                   | 类别     |
+| -------------- | ------------------------------------------ | -------- |
+| nvim-autopairs | https://github.com/windwp/nvim-autopairs   | 括号补全 |
+| project.nvim   | https://github.com/ahmedkhalf/project.nvim | 项目管理 |
+| nvim           | https://github.com/catppuccin/nvim         | 主题     |
+| noice          | https://github.com/folke/noice.nvim        | 组件     |
 
 ## 快捷键
 

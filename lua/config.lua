@@ -3,7 +3,7 @@ vim.g.loaded_newtrPlugin = 1
 vim.opt.termguicolors = true
 vim.g.mapleader = ' '
 vim.fn.sign_define('DapBreakpoint', {text='🛑', texthl='', linehl='', numhl=''}) 
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "tokyonight-night"
 vim.notify = require("notify")
 
 require('mason').setup()
@@ -164,7 +164,7 @@ require('lualine').setup {
   options = {
     component_separators = {left = '', right = ''},
     section_separators = {left = '', right = ''},
-    theme = "catppuccin",
+    theme = "tokyonight",
     disabled_filetypes = {
       statusline = {'NvimTree', 'toggleterm', 'dap-repl'},
       winbar = {},
@@ -177,7 +177,6 @@ require('lualine').setup {
   }
 }
 require('bufferline').setup {
-  highlights = require("catppuccin.groups.integrations.bufferline").get(),
   options = {
     indicator = {
       style = 'underline',

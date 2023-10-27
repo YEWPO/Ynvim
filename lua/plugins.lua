@@ -92,7 +92,7 @@ require('packer').startup({function(use)
   }
  
   -- Theme and StatusLine
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use { "folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {} }
   use 'nvim-lualine/lualine.nvim'
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
