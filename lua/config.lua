@@ -12,7 +12,7 @@ require('impatient')
 
 -- Nvim Treesitter Setting
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "cpp", "lua", "vim", "vimdoc", "java", "python" },
+  ensure_installed = { "c", "cpp", "lua", "vim", "vimdoc", "java", "python", "rust" },
 
   sync_install = true,
 
@@ -129,7 +129,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
  
 local lspconfig = require('lspconfig')
  
-local servers = { 'clangd', 'pyright', 'html' }
+local servers = { 'clangd', 'pyright', 'html', 'rust_analyzer' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     capabilities = capabilities,
