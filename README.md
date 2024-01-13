@@ -103,6 +103,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 | nvim-dap-ui             | https://github.com/rcarriga/nvim-dap-ui                    | 调试界面         |
 | nvim-metals             | https://github.com/scalameta/nvim-metals                   | BSP              |
 | hop.nvim                | https://github.com/phaazon/hop.nvim                        | 代码跳跃         |
+| rustaceanvim            | https://github.com/mrcjkb/rustaceanvim                     | Rust语言工具包   |
 
 ### 未配置
 

@@ -23,19 +23,20 @@ require('packer').startup({function(use)
 
   use 'nvim-lua/plenary.nvim'
   use 'jose-elias-alvarez/null-ls.nvim'
+  use 'mrcjkb/rustaceanvim'
 
   -- DAP
   use 'mfussenegger/nvim-dap'
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
  
   -- Completion
-  use'hrsh7th/cmp-nvim-lsp'
-  use'hrsh7th/cmp-buffer'
-  use'hrsh7th/cmp-path'
-  use'hrsh7th/cmp-cmdline'
-  use'hrsh7th/nvim-cmp'
-  use'L3MON4D3/LuaSnip'
-  use'saadparwaiz1/cmp_luasnip'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
  
   -- Troubles
   use {
