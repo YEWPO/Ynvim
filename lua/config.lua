@@ -321,6 +321,10 @@ wk.register ({
   C = {"<cmd>%!clang-format<cr>", "ClangFormat"},
   i = {"\"+p", "Insert from Clipboard"},
   m = {"<cmd>Mason<cr>", "Mason"},
+  r = {
+    name = "+RustLSP",
+    c = {"<cmd>RustLsp codeAction<cr>", "codeAction"},
+  },
   d = {
     name = "+Debug",
     e = {"<cmd>lua require('dap').terminate()<cr>", "End"},
