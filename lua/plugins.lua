@@ -27,7 +27,7 @@ require('packer').startup({function(use)
 
   -- DAP
   use 'mfussenegger/nvim-dap'
-  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
  
   -- Completion
   use 'hrsh7th/cmp-nvim-lsp'
