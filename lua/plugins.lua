@@ -192,6 +192,7 @@ require('packer').startup({function(use)
   }
 
   use 'lewis6991/impatient.nvim'
+  use 'github/copilot.vim'
 
   -- Which Key
   use {

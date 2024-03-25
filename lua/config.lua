@@ -5,6 +5,11 @@ vim.g.mapleader = ' '
 vim.fn.sign_define('DapBreakpoint', {text='🛑', texthl='', linehl='', numhl=''}) 
 vim.cmd.colorscheme "tokyonight-night"
 vim.notify = require("notify")
+vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false
+})
+vim.g.copilot_no_tab_map = true
 
 require('mason').setup()
 require('mason-lspconfig').setup()

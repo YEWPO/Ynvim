@@ -104,6 +104,7 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 | nvim-metals             | https://github.com/scalameta/nvim-metals                   | BSP              |
 | hop.nvim                | https://github.com/phaazon/hop.nvim                        | 代码跳跃         |
 | rustaceanvim            | https://github.com/mrcjkb/rustaceanvim                     | Rust语言工具包   |
+| copilot                 | https://github.com/github/copilot.vim                      | Copilot          |
 
 ### 未配置
 
@@ -113,6 +114,8 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 | project.nvim   | https://github.com/ahmedkhalf/project.nvim | 项目管理 |
 | nvim           | https://github.com/catppuccin/nvim         | 主题     |
 | noice          | https://github.com/folke/noice.nvim        | 组件     |
+
+**Copilot 需要自己有使用权。**
 
 ## 快捷键
 
@@ -224,7 +227,3 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 | 操作        | 效果                         |
 | ----------- | ---------------------------- |
 | `<leader>c` | 复制选中的内容到系统剪切板上 |
-
-## 插件具体配置
-
-见[nvim-config](http://43.139.35.156/75/nvim-config)
