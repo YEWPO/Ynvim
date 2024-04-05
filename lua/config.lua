@@ -13,7 +13,6 @@ vim.g.copilot_no_tab_map = true
 
 require('mason').setup()
 require('mason-lspconfig').setup()
-require('impatient')
 
 -- Nvim Treesitter Setting
 require'nvim-treesitter.configs'.setup {

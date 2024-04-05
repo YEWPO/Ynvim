@@ -97,7 +97,6 @@ git clone https://github.com/YEWPO/Ynvim ~/.config/nvim --depth=1 && nvim && nvi
 | which-key               | https://github.com/folke/which-key.nvim                    | 快捷键           |
 | comment                 | https://github.com/numToStr/Comment.nvim                   | 代码注释         |
 | nvim-notify             | https://github.com/rcarriga/nvim-notify                    | 通知             |
-| impatient.nvim          | https://github.com/lewis6991/impatient.nvim                | 性能优化         |
 | nvim-dap                | https://github.com/mfussenegger/nvim-dap                   | 调试             |
 | nvim-treesitter-context | https://github.com/nvim-treesitter/nvim-treesitter-context | 函数提示         |
 | nvim-dap-ui             | https://github.com/rcarriga/nvim-dap-ui                    | 调试界面         |

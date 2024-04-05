@@ -191,7 +191,6 @@ require('packer').startup({function(use)
     requires = {'nvim-tree/nvim-web-devicons'}
   }
 
-  use 'lewis6991/impatient.nvim'
   use 'github/copilot.vim'
 
   -- Which Key
