@@ -82,6 +82,11 @@ local plugins = {
     "nvimdev/dashboard-nvim",
     event = 'VimEnter',
   },
+
+  {
+    "numToStr/Comment.nvim",
+    lazy = false,
+  },
 }
 
 local opts = {
@@ -104,3 +109,4 @@ require("config/telescope")
 require("config/aerial")
 require("config/copilot")
 require("config/dashboard")
+require("config/comment")
