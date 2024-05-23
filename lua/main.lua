@@ -17,6 +17,10 @@ local plugins = {
   "stevearc/aerial.nvim",
   "github/copilot.vim",
 
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
+  "neovim/nvim-lspconfig",
+
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
@@ -91,6 +95,7 @@ require("config/tokyonight")
 require("config/nvim-notify")
 require("config/nvim-treesitter")
 require("config/nvim-tree")
+require("config/mason")
 require("config/hop")
 require("config/lualine")
 require("config/bufferline")
