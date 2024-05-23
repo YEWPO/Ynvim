@@ -21,6 +21,12 @@ local plugins = {
   "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",
 
+  "hrsh7th/cmp-nvim-lsp",
+  "hrsh7th/cmp-buffer",
+  "hrsh7th/cmp-path",
+  "hrsh7th/cmp-cmdline",
+  "hrsh7th/nvim-cmp",
+
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
@@ -91,11 +97,14 @@ local opts = {
 require("lazy").setup(plugins, opts)
 
 require("config/which-key")
-require("config/tokyonight")
 require("config/nvim-notify")
+
+require("config/tokyonight")
 require("config/nvim-treesitter")
 require("config/nvim-tree")
 require("config/mason")
+require("config/cmp")
+
 require("config/hop")
 require("config/lualine")
 require("config/bufferline")
