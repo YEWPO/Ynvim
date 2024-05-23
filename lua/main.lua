@@ -31,11 +31,6 @@ local plugins = {
   "nvim-treesitter/nvim-treesitter-context",
 
   {
-    "neoclide/coc.nvim",
-    branch = "release",
-  },
-
-  {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
@@ -99,7 +94,6 @@ require("config/nvim-tree")
 require("config/hop")
 require("config/lualine")
 require("config/bufferline")
-require("config/coc")
 require("config/gitsigns")
 require("config/toggleterm")
 require("config/telescope")
