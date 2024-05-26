@@ -12,7 +12,7 @@ require("bufferline").setup {
         separator = true
       }
     },
-    diagnostics = 'coc',
+    diagnostics = 'nvim_lsp',
     diagnostics_update_in_insert = false,
     numbers = 'ordinal'
   },
