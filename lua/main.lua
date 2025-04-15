@@ -92,6 +92,18 @@ local plugins = {
     "numToStr/Comment.nvim",
     lazy = false,
   },
+
+  {
+    "mrcjkb/rustaceanvim",
+    version = "^5",
+    lazy = false,
+  },
+
+  {
+    "folke/trouble.nvim",
+    opts = {};
+    cmd = "Trouble",
+  },
 }
 
 local opts = {

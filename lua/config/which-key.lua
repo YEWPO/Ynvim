@@ -21,6 +21,7 @@ local key_mappings = {
   { "<leader>wj", "<cmd>wincmd j<cr>", desc = "Button Window"},
   { "<leader>c", "\"+y", desc = "Copy to Clipboard", mode = "v"},
   { "<leader>i", "\"+p", desc = "Insert from Clipboard"},
+  { "<leader>P", "<cmd>Trouble diagnostics toggle<cr>", desc = "Diagnostics (Trouble)"},
 }
 
 require("which-key").add(key_mappings)
