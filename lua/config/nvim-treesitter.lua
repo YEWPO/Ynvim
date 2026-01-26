@@ -1,13 +1,3 @@
-require("nvim-treesitter.configs").setup {
-  ensure_installed = { "c", "cpp", "lua", "vim", "vimdoc" },
-  sync_install = true,
-  auto_install = false,
-
-  highlight = {
-    enable = true,
-  }
-}
-
 require("treesitter-context").setup {
   enable = true,
   max_lines = 0, -- No limit on the number of lines

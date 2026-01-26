@@ -39,6 +39,7 @@ local plugins = {
 
   {
     "nvim-treesitter/nvim-treesitter",
+    lazy = false,
     build = ":TSUpdate",
   },
   "nvim-treesitter/nvim-treesitter-context",
@@ -119,7 +120,6 @@ require("config/nvim-treesitter")
 require("config/nvim-tree")
 require("config/mason")
 require("config/cmp")
-require("config/lspconfig")
 
 require("config/hop")
 require("config/lualine")
