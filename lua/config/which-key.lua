@@ -19,8 +19,8 @@ local key_mappings = {
   { "<leader>wh", "<cmd>wincmd h<cr>", desc = "Left Window"},
   { "<leader>wk", "<cmd>wincmd k<cr>", desc = "Top Window"},
   { "<leader>wj", "<cmd>wincmd j<cr>", desc = "Button Window"},
-  { "<leader>c", "\"+y", desc = "Copy to Clipboard", mode = "v"},
-  { "<leader>i", "\"+p", desc = "Insert from Clipboard"},
+  { "<leader>y", "\"+y", desc = "Copy to Clipboard", mode = "v"},
+  { "<leader>p", "\"+p", desc = "Paste from Clipboard"},
   { "<leader>P", "<cmd>Trouble diagnostics toggle<cr>", desc = "Diagnostics (Trouble)"},
 }
 
